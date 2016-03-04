@@ -5,6 +5,7 @@ import SearchBar from './components/search_bar'; //use relative path for files w
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_details';
 const API_KEY = 'AIzaSyDwKGn8tGa308hVeNjnVxzJXH2eQO5G16I';
+
 // Create a new component. This component should produce some HTML
 // const is an es6 piece of syntax
 // const is similar to var
