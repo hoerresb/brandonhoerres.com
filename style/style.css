@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6,span,p{
+body,h1,h2,h3,h4,h5,h6,span,p{
     font-family: 'Lato', sans-serif !important;
 }
 
@@ -33,22 +33,13 @@ img{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:94.7vh;
+    height:100vh;
 }
 .page-center{
     float: none;
     max-width: 1170px;
     margin: 0 auto;
     padding: 20% 0 30px;
-}
-.main h1{
-    font-size:80px;
-    color:white;
-    margin-bottom:0px;
-}
-.main span{
-    color:white;
-    font-size:30px;
 }
 nav  ul  li > a {
     overflow: hidden;
@@ -62,20 +53,52 @@ nav  ul  li > a {
     white-space: nowrap;
     box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
 }
-/*
- *Scrolling
- */
-
-a[ id= "mutinyBikes" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
+.overlay:before {
+    content: "Preview";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 4.5em;
+    height: 1.75em;
+    margin: -1.065em auto 0;
+    border: 0.15em solid;
+    font-size: 0.65em;
+    line-height: 1.75em;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: -webkit-transform 0.65s ease, opacity 0.65s ease;
+    transition: transform 0.65s ease, opacity 0.65s ease;
+}
+.demo:hover .bg {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.demo:hover .overlay:before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.demo:hover .overlay span {
+    -webkit-transform: translate(135%, 0);
+    -ms-transform: translate(135%, 0);
+    transform: translate(135%, 0);
+}
+.overlay span{
+    -webkit-transition: -webkit-transform 0.65s ease;
+    transition:         transform 0.65s ease;
 }
 
-a[ id= "madera" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
+.portfolio p a{
+    color: #7a7a7a;
 }
-a[ id= "scanalytics" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
+.portfolio p b{
+    font-weight:500;
 }

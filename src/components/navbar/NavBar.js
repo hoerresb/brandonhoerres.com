@@ -27,6 +27,13 @@ class Navbar extends Component {
                 display: 'block',
                 boxSizing: 'border-box'
             },
+            navbarFixedTop : {
+                position: 'fixed',
+                right: '0',
+                left: '0',
+                zIndex: '1030',
+                top: '0'
+            },
             container: {
                 paddingRight: '15px',
                 paddingLeft: '15px',
@@ -79,7 +86,7 @@ class Navbar extends Component {
         const {navStyle, contStyle} = this.props;
         return (
            <StyleRoot>
-               <nav ref="navbar" style={[defStyle.navbar, navStyle && navStyle]}>
+               <nav ref="navbar" style={[defStyle.navbar, defStyle.navbarFixedTop, navStyle && navStyle]}>
                    <span style={[defStyle.pseudoBefore]} />
                    <div ref="container" style={[defStyle.container, contStyle && contStyle]}>
                        <span style={[defStyle.pseudoBefore]} />

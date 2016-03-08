@@ -1,4 +1,4 @@
-# ReduxSimpleStarter
+# brandonhoerres.com
 
 ###Getting Started###
 

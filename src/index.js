@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header';
 import Main from './components/main';
-import Mutiny from './components/mutinyBikes';
+import Portfolio from './components/portfolio';
+import AboutHeader from './components/aboutHeader';
 // Create a new component. This component should produce some HTML
 // const is an es6 piece of syntax
 // const is similar to var
@@ -20,7 +21,8 @@ class App extends Component{ // fat arrow is es6 syntax. Same as using 'function
            <div>
                <Main />
                <Header />
-               <Mutiny />
+               <Portfolio />
+               <AboutHeader />
            </div>
        );// this is jsx. Looks like HTML but is really just javascript.
    }
