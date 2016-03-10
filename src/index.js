@@ -4,6 +4,7 @@ import Header from './components/header';
 import Main from './components/main';
 import Portfolio from './components/portfolio';
 import AboutHeader from './components/aboutHeader';
+import Contact from './components/contact';
 // Create a new component. This component should produce some HTML
 // const is an es6 piece of syntax
 // const is similar to var
@@ -23,6 +24,7 @@ class App extends Component{ // fat arrow is es6 syntax. Same as using 'function
                <Header />
                <Portfolio />
                <AboutHeader />
+               <Contact />
            </div>
        );// this is jsx. Looks like HTML but is really just javascript.
    }

@@ -90,6 +90,10 @@ class Portfolio extends Component{
             },
             comingSoon:{
                 backgroundColor:'#333'
+            },
+            rowPadding:{
+                marginLeft:'0',
+                marginRight:'0'
             }
 
         }
@@ -101,7 +105,7 @@ class Portfolio extends Component{
         const defStyle = this.getStyles();
         return(
            <StyleRoot>
-               <div className="portfolio" id="portfolio">
+               <div className="portfolio row" id="portfolio" style={[defStyle.rowPadding]}>
                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-2" style={[defStyle.portfolioBg]}>
                        <h1 style={[defStyle.portfolioHeader]}>Portfolio</h1>
                        <p style={[defStyle.portfolioText]}>On the side, I helped some good friends create websites for their bike companies.

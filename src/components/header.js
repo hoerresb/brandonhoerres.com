@@ -12,7 +12,6 @@ class Header extends Component {
 
         const navitems = [
             {link: '#portfolio', title: 'Portfolio'},
-            {link: '#about', title: 'About'},
             {link: '#contact', title: 'Contact'}
         ];
         return (
