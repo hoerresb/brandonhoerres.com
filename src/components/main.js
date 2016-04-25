@@ -13,10 +13,10 @@ class Main extends Component {
       return{
           fixedBG : {
               '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)':{
-                  height:'30vh'
+                  height:'40vh'
               },
               '@media (min-width: 768px)': {
-                    height:'30vh'
+                    height:'40vh'
               },
               '@media (min-width: 992px)': {
                   height: '100vh'
@@ -27,7 +27,7 @@ class Main extends Component {
               color: 'white',
               marginBottom: '0',
               '@media (min-width: 768px)': {
-                  fontSize: '50px',
+                  fontSize: '60px',
                   textAlign: 'center'
               },
               '@media (min-width: 992px)': {
@@ -35,7 +35,7 @@ class Main extends Component {
                   textAlign: 'left'
               },
               '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)':{
-                  fontSize:'50px',
+                  fontSize:'60px',
                   textAlign:'center'
               }
 
@@ -45,14 +45,17 @@ class Main extends Component {
               color:'white',
               '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)':{
                   textAlign:'center',
-                  display:'block'
+                  display:'block',
+                  fontSize:'40px',
               },
               '@media (min-width: 768px)': {
                   display:'block',
-                  textAlign: 'center'
+                  textAlign: 'center',
+                  fontSize:'40px'
               },
               '@media (min-width: 992px)': {
-                  textAlign: 'left'
+                  textAlign: 'left',
+                  fontSize:'40px'
               }
           }
       }

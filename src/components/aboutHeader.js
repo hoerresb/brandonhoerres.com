@@ -14,7 +14,13 @@ class AboutHeader extends Component{
                 WebkitTransition: '-webkit-transform 1s ease',
                 transition: 'transform 1s ease',
                 background: 'url(/img/brandonHoerresFace.png) no-repeat 100% 50% fixed',
-                height:'400px'
+                height:'400px',
+                '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)':{
+                    background: 'url(/img/brandonHoerresFace.png) no-repeat 100% 77% fixed'
+                },
+                '@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)': {
+                    background: 'url(/img/brandonHoerresFace.png) no-repeat 100% 77% fixed'
+                }
             },
             preview:{
                 position: 'relative',

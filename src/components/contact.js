@@ -13,8 +13,15 @@ class Contact extends Component{
         return{
             contactH1:{
                 fontWeight:'300'
+            },
+            contactParagraph:{
+                '@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)':{
+                    fontSize:'26px'
+                },
+                '@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)': {
+                    fontSize:'26px'
+                }
             }
-
         }
     };
 
@@ -43,7 +50,7 @@ class Contact extends Component{
                <div className="page-center">
                    <div>
                        <h1 style={[defStyle.contactH1]}>Say Hello</h1>
-                       <p>
+                       <p style={[defStyle.contactParagraph]}>
                            Feel free to contact me through this form about contract work, coding questions, or to just say hi.
                        </p>
 
@@ -57,13 +64,13 @@ class Contact extends Component{
                        <fieldset className="form-group">
                            <label>Email address</label>
                            <input type="email" className="form-control"  placeholder="Enter email" onChange={this.handleEmailChange} />
-                           <small className="text-muted">I'll never share your email with anyone else.</small>
+                           <small className="text-muted">I'll never share your email with anyone else, or send you junk mail.</small>
                        </fieldset>
                        <fieldset className="form-group">
                            <label>Describe the nature of your inquiry</label>
                            <textarea className="form-control" rows="3" onChange={this.handleTextArea}></textarea>
                        </fieldset>
-                       <button className="btn btn-primary" onClick={this.handleSubmit}>Send</button>
+                       <button className="btn btn-default btn-lg btn-block contact-button hvr-icon-wobble-horizontal" onClick={this.handleSubmit}>Send</button>
                    </form>
                </div>
            </StyleRoot>

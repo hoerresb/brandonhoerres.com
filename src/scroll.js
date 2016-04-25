@@ -13,10 +13,8 @@
             {
                 var element;
                 var href = this.attributes.href.nodeValue.toString();
-                console.log(href);
                 if(element = document.getElementById(href.substr(1)))
                 {
-                    console.log(element);
                     var hop_count = speed/moving_frequency
                     var getScrollTopDocumentAtBegin = getScrollTopDocument();
                     var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
