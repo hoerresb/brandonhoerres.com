@@ -105,6 +105,7 @@ nav  ul  li > a {
 .btn.btn-default.contact-button{
     background-color:white;
     border:2px solid #777;
+    color:black;
 }
 .hvr-wobble-horizontal {
     display: inline-block;
@@ -213,4 +214,12 @@ nav  ul  li > a {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+
+.animation-enter {
+    opacity: 0.01;
+}
+.animation-enter.animation-enter-active {
+    opacity: 1;
+    transition: opacity 2s ease-in;
 }

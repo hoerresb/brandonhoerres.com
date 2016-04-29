@@ -25,23 +25,6 @@ class Contact extends Component{
         }
     };
 
-    handleEmailChange = (e) => {
-        this.setState({email: e.target.value});
-    };
-    handleNameChange = (e) => {
-         this.setState({name: e.target.value});
-    };
-    handleTextArea = (e) => {
-        this.setState({textArea: e.target.value});
-    };
-
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state.email);
-        console.log(this.state.name);
-        console.log(this.state.textArea);
-    };
-
 
     render(){
         const defStyle = this.getStyles();
@@ -50,28 +33,9 @@ class Contact extends Component{
                <div className="page-center">
                    <div>
                        <h1 style={[defStyle.contactH1]}>Say Hello</h1>
-                       <p style={[defStyle.contactParagraph]}>
-                           Feel free to contact me through this form about contract work, coding questions, or to just say hi.
-                       </p>
+                       <a style={[defStyle.contactParagraph]} href="mailto:brandonhoerres@gmail.com" className="btn btn-default btn-lg btn-block contact-button hvr-icon-wobble-horizontal">Send</a>
 
                    </div>
-                   <form>
-                       <input type="hidden"/>
-                       <fieldset className="form-group">
-                           <label>Name</label>
-                           <input type="text" className="form-control"  placeholder="Enter Name" onChange={this.handleNameChange} />
-                       </fieldset>
-                       <fieldset className="form-group">
-                           <label>Email address</label>
-                           <input type="email" className="form-control"  placeholder="Enter email" onChange={this.handleEmailChange} />
-                           <small className="text-muted">I'll never share your email with anyone else, or send you junk mail.</small>
-                       </fieldset>
-                       <fieldset className="form-group">
-                           <label>Describe the nature of your inquiry</label>
-                           <textarea className="form-control" rows="3" onChange={this.handleTextArea}></textarea>
-                       </fieldset>
-                       <button className="btn btn-default btn-lg btn-block contact-button hvr-icon-wobble-horizontal" onClick={this.handleSubmit}>Send</button>
-                   </form>
                </div>
            </StyleRoot>
         );
